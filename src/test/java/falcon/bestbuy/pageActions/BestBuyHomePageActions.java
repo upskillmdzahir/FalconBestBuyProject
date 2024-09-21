@@ -19,7 +19,6 @@ public class BestBuyHomePageActions {
     public void searchProduct(String product){
         //WebDriverWait wait = new WebDriverWait(SetupDrivers.driver, 10);
         //wait.until(ExpectedConditions.elementToBeClickable(BestBuyHomePageLocatorsObj.txtbxSearch));
-    	//
         BestBuyHomePageLocatorsObj.txtbxSearch.sendKeys(product);
         BestBuyHomePageLocatorsObj.btnSearch.click();
     }
