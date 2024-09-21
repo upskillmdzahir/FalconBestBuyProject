@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [RegressionSuite]">
+  <test name="FalconBestBuyTests(failed)">
+    <classes>
+      <class name="falcon.runners.RunnerClass">
+        <methods>
+          <include name="writeExtentReport"/>
+          <include name="setUpClass"/>
+          <include name="feature" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- falcon.runners.RunnerClass -->
+    </classes>
+  </test> <!-- FalconBestBuyTests(failed) -->
+</suite> <!-- Failed suite [RegressionSuite] -->

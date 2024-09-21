@@ -9,7 +9,7 @@ import com.cucumber.listener.Reporter;
 import cucumber.api.CucumberOptions;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
 
-@CucumberOptions(features = { "src/test/resources/FeatureFiles" }, // Path to your feature files
+@CucumberOptions(features = { "src/test/resource/FeatureFiles" }, // Path to your feature files
                 glue = { "falcon.bestbuy.stepDef", "falcon.utilities" }, // Updated glue code packages
                 tags = {"@regression", "@smoke"}, // Tags used in your feature files
                 plugin = { "pretty", "html:target/cucumber-htmlreport", 
@@ -25,3 +25,5 @@ public class RunnerClass extends AbstractTestNGCucumberTests {
     }
 
 }
+
+

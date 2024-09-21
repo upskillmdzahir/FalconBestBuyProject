@@ -3,7 +3,7 @@
 <suite name="RegressionSuite">
   <test name="FalconBestBuyTests">
     <classes>
-      <class name="falcon.runners.FalconTestRunner"/>
+      <class name="falcon.runners.RunnerClass"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
