@@ -39,7 +39,6 @@
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
-			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
 		</ul>
 
@@ -53,7 +52,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Sep 20, 2024 12:00:20 AM</span>
+                    <span class='label suite-start-time blue darken-3'>Sep 21, 2024 04:55:08 PM</span>
 				</a>
 			</li>
 			<li>
@@ -79,8 +78,6 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
-						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
-						<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -144,10 +141,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> feature(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> feature(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -159,10 +156,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='80%'><span class='strong'>4</span> scenario(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>5</span> scenario(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='20%'>1</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -174,10 +171,10 @@
 					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='86.667%'><span class='strong'>26</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>30</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='3.333%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='10%'>3</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -191,15 +188,15 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Best Buy Product Search and Filter</span>
-						<span class='test-time'>Sep 20, 2024 12:00:21 AM</span>
-						<span class='test-status right fail'>fail</span>
+						<span class='test-time'>Sep 21, 2024 04:55:08 PM</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
-<div class='scenariooutline node' test-id='2' status='fail'>
-	<span class='duration right label'>0h 3m 12s+564ms</span>
+<div class='scenariooutline node' test-id='2' status='pass'>
+	<span class='duration right label'>0h 2m 9s+133ms</span>
 	<div class='desc'>
 		<b>ScenarioOutline</b>
 		<span class="desc-text">Search for a product and apply multiple filters</span>
@@ -322,7 +319,7 @@
 					</li>
 				</ul>
 		</li>
-		<li test-id='24' class='node scenario fail' status='fail'>
+		<li test-id='24' class='node scenario pass' status='pass'>
 			<div class='category-list'>
 				<span class='category label white-text'>@smoke</span>
 				<span class='category label white-text'>@regression</span>
@@ -343,106 +340,21 @@
 						<span class="bdd-step-name">Given The user searches for "TV"</span>
 							<div class='pre'>passed</div>
 					</li>
-					<li test-id='27' class='node when fail' status='fail'><b>When</b>
+					<li test-id='27' class='node when pass' status='pass'><b>When</b>
 						<span class="bdd-step-name">When The user filters by "All Flat-Screen TVs", "Sony", "$1500-$1999.99", and "4 & Up"</span>
-							<div class='pre'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //input[@aria-label='Sony']' (tried for 10 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
-	at falcon.bestbuy.pageActions.BestBuySearchResultActions.applyFilters(BestBuySearchResultActions.java:27)
-	at falcon.bestbuy.stepDef.BestBuySearchResultSteps.the_user_filters_by(BestBuySearchResultSteps.java:13)
-	at ?.When The user filters by "All Flat-Screen TVs", "Sony", "$1500-$1999.99", and "4 & Up"(BestBuyProductSearch.feature:12)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@aria-label='Sony']"}
-  (Session info: chrome=128.0.6613.113)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'DESKTOP-BULAH5N', ip: '192.168.0.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.113, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\zahir\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:8556}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 27b40546626229690750f92a79ecfa97
-*** Element info: {Using=xpath, value=//input[@aria-label='Sony']}
-	at sun.reflect.GeneratedConstructorAccessor20.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy18.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:315)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:44)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:301)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:298)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:686)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:682)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
-	at falcon.bestbuy.pageActions.BestBuySearchResultActions.applyFilters(BestBuySearchResultActions.java:27)
-	at falcon.bestbuy.stepDef.BestBuySearchResultSteps.the_user_filters_by(BestBuySearchResultSteps.java:13)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at cucumber.runtime.Utils$1.call(Utils.java:37)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:13)
-	at cucumber.runtime.Utils.invoke(Utils.java:31)
-	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
-	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
-	at cucumber.runtime.Runtime.runStep(Runtime.java:299)
-	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
-	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
-	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
-	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
-	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
-	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:63)
-	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:379)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:340)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:413)
-</pre></div>
+							<div class='pre'>passed</div>
 					</li>
-					<li test-id='28' class='node then skip' status='skip'><b>Then</b>
+					<li test-id='28' class='node then pass' status='pass'><b>Then</b>
 						<span class="bdd-step-name">Then The product list should display only "Sony" products in the "All Flat-Screen TVs" category</span>
-							<div class='pre'>skipped</div>
+							<div class='pre'>passed</div>
 					</li>
-					<li test-id='29' class='node and skip' status='skip'><b>And</b>
+					<li test-id='29' class='node and pass' status='pass'><b>And</b>
 						<span class="bdd-step-name">And The products should be within the "$1500-$1999.99"</span>
-							<div class='pre'>skipped</div>
+							<div class='pre'>passed</div>
 					</li>
-					<li test-id='30' class='node and skip' status='skip'><b>And</b>
+					<li test-id='30' class='node and pass' status='pass'><b>And</b>
 						<span class="bdd-step-name">And The products should have a rating of "4 & Up" or higher</span>
-							<div class='pre'>skipped</div>
+							<div class='pre'>passed</div>
 					</li>
 				</ul>
 		</li>
@@ -543,14 +455,13 @@ Session ID: 27b40546626229690750f92a79ecfa97
 					<div class='category-heading'>
 						<span class='category-name'>@regression</span>
 						<span class='category-status right'>
-							<span class='label pass'>4</span>
-							<span class='label fail'>2</span>
+							<span class='label pass'>6</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 4</span>
-							<span class='label red lighten-1 white-text'>Failed: 2</span>
+							<span class='label green accent-4 white-text'>Passed: 6</span>
+							
 							
 						</div>
 					
@@ -565,32 +476,32 @@ Session ID: 27b40546626229690750f92a79ecfa97
 								</thead>
 								<tbody>
 									<tr>
-										<td>Sep 20, 2024 12:00:21 AM</td>
+										<td>Sep 21, 2024 04:55:08 PM</td>
 										<td class='linked' test-id='1'>Best Buy Product Search and Filter</td>
-										<td><span class='test-status fail'>fail</span></td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Sep 20, 2024 12:00:21 AM</td>
+										<td>Sep 21, 2024 04:55:09 PM</td>
 										<td class='linked' test-id='3'>Best Buy Product Search and Filter.Search for a product and apply multiple filters.Search for a product and apply multiple filters</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Sep 20, 2024 12:01:05 AM</td>
+										<td>Sep 21, 2024 04:55:42 PM</td>
 										<td class='linked' test-id='10'>Best Buy Product Search and Filter.Search for a product and apply multiple filters.Search for a product and apply multiple filters</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Sep 20, 2024 12:01:35 AM</td>
+										<td>Sep 21, 2024 04:56:04 PM</td>
 										<td class='linked' test-id='17'>Best Buy Product Search and Filter.Search for a product and apply multiple filters.Search for a product and apply multiple filters</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Sep 20, 2024 12:02:20 AM</td>
+										<td>Sep 21, 2024 04:56:30 PM</td>
 										<td class='linked' test-id='24'>Best Buy Product Search and Filter.Search for a product and apply multiple filters.Search for a product and apply multiple filters</td>
-										<td><span class='test-status fail'>fail</span></td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Sep 20, 2024 12:02:59 AM</td>
+										<td>Sep 21, 2024 04:56:53 PM</td>
 										<td class='linked' test-id='31'>Best Buy Product Search and Filter.Search for a product and apply multiple filters.Search for a product and apply multiple filters</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
@@ -603,14 +514,13 @@ Session ID: 27b40546626229690750f92a79ecfa97
 					<div class='category-heading'>
 						<span class='category-name'>@smoke</span>
 						<span class='category-status right'>
-							<span class='label pass'>4</span>
-							<span class='label fail'>2</span>
+							<span class='label pass'>6</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 4</span>
-							<span class='label red lighten-1 white-text'>Failed: 2</span>
+							<span class='label green accent-4 white-text'>Passed: 6</span>
+							
 							
 						</div>
 					
@@ -625,32 +535,32 @@ Session ID: 27b40546626229690750f92a79ecfa97
 								</thead>
 								<tbody>
 									<tr>
-										<td>Sep 20, 2024 12:00:21 AM</td>
+										<td>Sep 21, 2024 04:55:08 PM</td>
 										<td class='linked' test-id='1'>Best Buy Product Search and Filter</td>
-										<td><span class='test-status fail'>fail</span></td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Sep 20, 2024 12:00:21 AM</td>
+										<td>Sep 21, 2024 04:55:09 PM</td>
 										<td class='linked' test-id='3'>Best Buy Product Search and Filter.Search for a product and apply multiple filters.Search for a product and apply multiple filters</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Sep 20, 2024 12:01:05 AM</td>
+										<td>Sep 21, 2024 04:55:42 PM</td>
 										<td class='linked' test-id='10'>Best Buy Product Search and Filter.Search for a product and apply multiple filters.Search for a product and apply multiple filters</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Sep 20, 2024 12:01:35 AM</td>
+										<td>Sep 21, 2024 04:56:04 PM</td>
 										<td class='linked' test-id='17'>Best Buy Product Search and Filter.Search for a product and apply multiple filters.Search for a product and apply multiple filters</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Sep 20, 2024 12:02:20 AM</td>
+										<td>Sep 21, 2024 04:56:30 PM</td>
 										<td class='linked' test-id='24'>Best Buy Product Search and Filter.Search for a product and apply multiple filters.Search for a product and apply multiple filters</td>
-										<td><span class='test-status fail'>fail</span></td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Sep 20, 2024 12:02:59 AM</td>
+										<td>Sep 21, 2024 04:56:53 PM</td>
 										<td class='linked' test-id='31'>Best Buy Product Search and Filter.Search for a product and apply multiple filters.Search for a product and apply multiple filters</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
@@ -663,14 +573,13 @@ Session ID: 27b40546626229690750f92a79ecfa97
 					<div class='category-heading'>
 						<span class='category-name'>@bestbuy-search</span>
 						<span class='category-status right'>
-							<span class='label pass'>4</span>
-							<span class='label fail'>2</span>
+							<span class='label pass'>6</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 4</span>
-							<span class='label red lighten-1 white-text'>Failed: 2</span>
+							<span class='label green accent-4 white-text'>Passed: 6</span>
+							
 							
 						</div>
 					
@@ -685,32 +594,32 @@ Session ID: 27b40546626229690750f92a79ecfa97
 								</thead>
 								<tbody>
 									<tr>
-										<td>Sep 20, 2024 12:00:21 AM</td>
+										<td>Sep 21, 2024 04:55:08 PM</td>
 										<td class='linked' test-id='1'>Best Buy Product Search and Filter</td>
-										<td><span class='test-status fail'>fail</span></td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Sep 20, 2024 12:00:21 AM</td>
+										<td>Sep 21, 2024 04:55:09 PM</td>
 										<td class='linked' test-id='3'>Best Buy Product Search and Filter.Search for a product and apply multiple filters.Search for a product and apply multiple filters</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Sep 20, 2024 12:01:05 AM</td>
+										<td>Sep 21, 2024 04:55:42 PM</td>
 										<td class='linked' test-id='10'>Best Buy Product Search and Filter.Search for a product and apply multiple filters.Search for a product and apply multiple filters</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Sep 20, 2024 12:01:35 AM</td>
+										<td>Sep 21, 2024 04:56:04 PM</td>
 										<td class='linked' test-id='17'>Best Buy Product Search and Filter.Search for a product and apply multiple filters.Search for a product and apply multiple filters</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Sep 20, 2024 12:02:20 AM</td>
+										<td>Sep 21, 2024 04:56:30 PM</td>
 										<td class='linked' test-id='24'>Best Buy Product Search and Filter.Search for a product and apply multiple filters.Search for a product and apply multiple filters</td>
-										<td><span class='test-status fail'>fail</span></td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Sep 20, 2024 12:02:59 AM</td>
+										<td>Sep 21, 2024 04:56:53 PM</td>
 										<td class='linked' test-id='31'>Best Buy Product Search and Filter.Search for a product and apply multiple filters.Search for a product and apply multiple filters</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
@@ -723,14 +632,13 @@ Session ID: 27b40546626229690750f92a79ecfa97
 					<div class='category-heading'>
 						<span class='category-name'>@e2e</span>
 						<span class='category-status right'>
-							<span class='label pass'>4</span>
-							<span class='label fail'>2</span>
+							<span class='label pass'>6</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 4</span>
-							<span class='label red lighten-1 white-text'>Failed: 2</span>
+							<span class='label green accent-4 white-text'>Passed: 6</span>
+							
 							
 						</div>
 					
@@ -745,32 +653,32 @@ Session ID: 27b40546626229690750f92a79ecfa97
 								</thead>
 								<tbody>
 									<tr>
-										<td>Sep 20, 2024 12:00:21 AM</td>
+										<td>Sep 21, 2024 04:55:08 PM</td>
 										<td class='linked' test-id='1'>Best Buy Product Search and Filter</td>
-										<td><span class='test-status fail'>fail</span></td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Sep 20, 2024 12:00:21 AM</td>
+										<td>Sep 21, 2024 04:55:09 PM</td>
 										<td class='linked' test-id='3'>Best Buy Product Search and Filter.Search for a product and apply multiple filters.Search for a product and apply multiple filters</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Sep 20, 2024 12:01:05 AM</td>
+										<td>Sep 21, 2024 04:55:42 PM</td>
 										<td class='linked' test-id='10'>Best Buy Product Search and Filter.Search for a product and apply multiple filters.Search for a product and apply multiple filters</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Sep 20, 2024 12:01:35 AM</td>
+										<td>Sep 21, 2024 04:56:04 PM</td>
 										<td class='linked' test-id='17'>Best Buy Product Search and Filter.Search for a product and apply multiple filters.Search for a product and apply multiple filters</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Sep 20, 2024 12:02:20 AM</td>
+										<td>Sep 21, 2024 04:56:30 PM</td>
 										<td class='linked' test-id='24'>Best Buy Product Search and Filter.Search for a product and apply multiple filters.Search for a product and apply multiple filters</td>
-										<td><span class='test-status fail'>fail</span></td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Sep 20, 2024 12:02:59 AM</td>
+										<td>Sep 21, 2024 04:56:53 PM</td>
 										<td class='linked' test-id='31'>Best Buy Product Search and Filter.Search for a product and apply multiple filters.Search for a product and apply multiple filters</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
@@ -791,152 +699,6 @@ Session ID: 27b40546626229690750f92a79ecfa97
 	</div>
 </div>
 <!-- category view -->
-<div id='exception-view' class='view hide'>
-
-    <section id='controls'>
-        <div class='controls grey lighten-4'>
-            <!-- search -->
-            <div class='chip transparent' alt='Search Tests' title='Search Tests'>
-                <a href="#" class='search-div'>
-                    <i class='material-icons'>search</i> Search
-                </a>
-
-                <div class='input-field left hide'>
-                    <input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
-                </div>
-
-            </div>
-            <!-- search -->
-        </div>
-    </section>
-
-    <div class='subview-left left'>
-
-        <div class='view-summary'>
-            <h5>Exceptions</h3>
-                <ul id='exception-collection' class='exception-collection'>
-
-                        <li class='exception displayed active'>
-                            <div class='exception-heading'>
-                                <span class='exception-name'>org.openqa.selenium.TimeoutException</span>
-                                <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
-                            </div>
-                            <div class='exception-content hide'>
-                                <div class='exception-tests'>
-                                    <table class='bordered table-results'>
-                                        <thead>
-                                        <tr>
-                                            <th>Timestamp</th>
-                                            <th>TestName</th>
-                                            <th>Status</th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                                    <tr>
-                                                        <td>Sep 20, 2024 12:02:41 AM</td>
-                                                        <td class='linked' test-id='27'>Best Buy Product Search and Filter.Search for a product and apply multiple filters.Search for a product and apply multiple filters.When The user filters by "All Flat-Screen TVs", "Sony", "$1500-$1999.99", and "4 & Up"</td>
-                                                        <td><pre><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //input[@aria-label='Sony']' (tried for 10 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
-	at falcon.bestbuy.pageActions.BestBuySearchResultActions.applyFilters(BestBuySearchResultActions.java:27)
-	at falcon.bestbuy.stepDef.BestBuySearchResultSteps.the_user_filters_by(BestBuySearchResultSteps.java:13)
-	at ?.When The user filters by "All Flat-Screen TVs", "Sony", "$1500-$1999.99", and "4 & Up"(BestBuyProductSearch.feature:12)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@aria-label='Sony']"}
-  (Session info: chrome=128.0.6613.113)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'DESKTOP-BULAH5N', ip: '192.168.0.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.113, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\zahir\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:8556}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 27b40546626229690750f92a79ecfa97
-*** Element info: {Using=xpath, value=//input[@aria-label='Sony']}
-	at sun.reflect.GeneratedConstructorAccessor20.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy18.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:315)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:44)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:301)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:298)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:686)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:682)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
-	at falcon.bestbuy.pageActions.BestBuySearchResultActions.applyFilters(BestBuySearchResultActions.java:27)
-	at falcon.bestbuy.stepDef.BestBuySearchResultSteps.the_user_filters_by(BestBuySearchResultSteps.java:13)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at cucumber.runtime.Utils$1.call(Utils.java:37)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:13)
-	at cucumber.runtime.Utils.invoke(Utils.java:31)
-	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
-	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
-	at cucumber.runtime.Runtime.runStep(Runtime.java:299)
-	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
-	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
-	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
-	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
-	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
-	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:63)
-	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:379)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:340)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:413)
-</pre></pre></td>
-                                                    </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </li>
-                </ul>
-        </div>
-    </div>
-
-    <div class='subview-right left'>
-        <div class='view-summary'>
-            <h5 class='exception-name'></h5>
-        </div>
-    </div>
-</div>
 <!-- exception view -->
 <div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
@@ -964,19 +726,19 @@ Session ID: 27b40546626229690750f92a79ecfa97
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Sep 20, 2024 12:00:20 AM</div>
+					<div class='panel-lead'>Sep 21, 2024 04:55:08 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Sep 20, 2024 12:03:35 AM</div>
+			 		<div class='panel-lead'>Sep 21, 2024 04:57:19 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 3m 14s+844ms</div>
+					<div class='panel-lead'>0h 2m 11s+3ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -993,38 +755,38 @@ Session ID: 27b40546626229690750f92a79ecfa97
 						</tr>
 						<tr>
 							<td>@regression</td>
-							<td>4</td>
-							<td>2</td>
+							<td>6</td>
+							<td>0</td>
 							<td>0</td>
 							<td>
-									66.667%
+									100%
 							</td>
 						</tr>
 						<tr>
 							<td>@smoke</td>
-							<td>4</td>
-							<td>2</td>
+							<td>6</td>
+							<td>0</td>
 							<td>0</td>
 							<td>
-									66.667%
+									100%
 							</td>
 						</tr>
 						<tr>
 							<td>@bestbuy-search</td>
-							<td>4</td>
-							<td>2</td>
+							<td>6</td>
+							<td>0</td>
 							<td>0</td>
 							<td>
-									66.667%
+									100%
 							</td>
 						</tr>
 						<tr>
 							<td>@e2e</td>
-							<td>4</td>
-							<td>2</td>
+							<td>6</td>
+							<td>0</td>
 							<td>0</td>
 							<td>
-									66.667%
+									100%
 							</td>
 						</tr>
 					</table>
@@ -1040,31 +802,31 @@ Session ID: 27b40546626229690750f92a79ecfa97
 
 		<script>
 			var statusGroup = {
-				passParent: 0,
-				failParent: 1,
+				passParent: 1,
+				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 1,
+				exceptionsParent: 0,
 				
-				passChild: 4,
-				failChild: 1,
+				passChild: 5,
+				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				exceptionsChild: 1,
+				exceptionsChild: 0,
 				
-				passGrandChild: 26,
-				failGrandChild: 1,
+				passGrandChild: 30,
+				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
-				skipGrandChild: 3,
+				skipGrandChild: 0,
 				infoGrandChild: 0,
-				exceptionsGrandChild: 4,
+				exceptionsGrandChild: 0,
 			};
 		</script>
 		
