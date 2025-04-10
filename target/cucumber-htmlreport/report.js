@@ -133,7 +133,7 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 9760580000,
+  "duration": 2814250500,
   "status": "passed"
 });
 formatter.background({
@@ -162,7 +162,7 @@ formatter.match({
   "location": "BestBuyHomePageSteps.the_user_is_on_the_Best_Buy_homepage()"
 });
 formatter.result({
-  "duration": 349050800,
+  "duration": 114582900,
   "status": "passed"
 });
 formatter.scenario({
@@ -245,7 +245,7 @@ formatter.match({
   "location": "BestBuyHomePageSteps.the_user_searches_for(String)"
 });
 formatter.result({
-  "duration": 12159247300,
+  "duration": 18952299200,
   "status": "passed"
 });
 formatter.match({
@@ -270,7 +270,7 @@ formatter.match({
   "location": "BestBuySearchResultSteps.the_user_filters_by(String,String,String,String)"
 });
 formatter.result({
-  "duration": 8842409200,
+  "duration": 6071266200,
   "status": "passed"
 });
 formatter.match({
@@ -287,7 +287,7 @@ formatter.match({
   "location": "BestBuySearchResultSteps.the_product_list_should_display_only_products_in_the_category(String,String)"
 });
 formatter.result({
-  "duration": 177000,
+  "duration": 370400,
   "status": "passed"
 });
 formatter.match({
@@ -300,7 +300,7 @@ formatter.match({
   "location": "BestBuySearchResultSteps.the_products_should_be_within_the(String)"
 });
 formatter.result({
-  "duration": 208500,
+  "duration": 101200,
   "status": "passed"
 });
 formatter.match({
@@ -313,15 +313,15 @@ formatter.match({
   "location": "BestBuySearchResultSteps.the_products_should_have_a_rating_of_or_higher(String)"
 });
 formatter.result({
-  "duration": 152000,
+  "duration": 401100,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1846231000,
+  "duration": 2023632700,
   "status": "passed"
 });
 formatter.before({
-  "duration": 7296922100,
+  "duration": 1943246700,
   "status": "passed"
 });
 formatter.background({
@@ -350,7 +350,7 @@ formatter.match({
   "location": "BestBuyHomePageSteps.the_user_is_on_the_Best_Buy_homepage()"
 });
 formatter.result({
-  "duration": 183700,
+  "duration": 215500,
   "status": "passed"
 });
 formatter.scenario({
@@ -433,7 +433,7 @@ formatter.match({
   "location": "BestBuyHomePageSteps.the_user_searches_for(String)"
 });
 formatter.result({
-  "duration": 8647952300,
+  "duration": 14398330700,
   "status": "passed"
 });
 formatter.match({
@@ -458,7 +458,7 @@ formatter.match({
   "location": "BestBuySearchResultSteps.the_user_filters_by(String,String,String,String)"
 });
 formatter.result({
-  "duration": 5149463400,
+  "duration": 5665147100,
   "status": "passed"
 });
 formatter.match({
@@ -475,7 +475,7 @@ formatter.match({
   "location": "BestBuySearchResultSteps.the_product_list_should_display_only_products_in_the_category(String,String)"
 });
 formatter.result({
-  "duration": 172600,
+  "duration": 73400,
   "status": "passed"
 });
 formatter.match({
@@ -488,7 +488,7 @@ formatter.match({
   "location": "BestBuySearchResultSteps.the_products_should_be_within_the(String)"
 });
 formatter.result({
-  "duration": 88000,
+  "duration": 57100,
   "status": "passed"
 });
 formatter.match({
@@ -501,15 +501,15 @@ formatter.match({
   "location": "BestBuySearchResultSteps.the_products_should_have_a_rating_of_or_higher(String)"
 });
 formatter.result({
-  "duration": 79300,
+  "duration": 81000,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1679484700,
+  "duration": 1843984200,
   "status": "passed"
 });
 formatter.before({
-  "duration": 7127524700,
+  "duration": 1593944300,
   "status": "passed"
 });
 formatter.background({
@@ -538,7 +538,7 @@ formatter.match({
   "location": "BestBuyHomePageSteps.the_user_is_on_the_Best_Buy_homepage()"
 });
 formatter.result({
-  "duration": 193300,
+  "duration": 144300,
   "status": "passed"
 });
 formatter.scenario({
@@ -621,7 +621,7 @@ formatter.match({
   "location": "BestBuyHomePageSteps.the_user_searches_for(String)"
 });
 formatter.result({
-  "duration": 8401380000,
+  "duration": 13905640600,
   "status": "passed"
 });
 formatter.match({
@@ -646,8 +646,9 @@ formatter.match({
   "location": "BestBuySearchResultSteps.the_user_filters_by(String,String,String,String)"
 });
 formatter.result({
-  "duration": 8187935300,
-  "status": "passed"
+  "duration": 14675153500,
+  "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator \u0027By.xpath: //input[@id\u003d\u0027currentprice_facet-$1250-$1499.99-0\u0027]\u0027 (tried for 10 second(s) with 500 milliseconds interval)\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)\r\n\tat falcon.bestbuy.pageActions.BestBuySearchResultActions.applyFilters(BestBuySearchResultActions.java:31)\r\n\tat falcon.bestbuy.stepDef.BestBuySearchResultSteps.the_user_filters_by(BestBuySearchResultSteps.java:13)\r\n\tat ✽.When The user filters by \"French Door Refrigerators\", \"LG\", \"$1250-$1499.99\", and \"4 \u0026 Up\"(BestBuyProductSearch.feature:12)\r\nCaused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@id\u003d\u0027currentprice_facet-$1250-$1499.99-0\u0027]\"}\n  (Session info: chrome\u003d134.0.6998.177)\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.12.0\u0027, revision: \u00277c6e0b3\u0027, time: \u00272018-05-08T14:04:26.12Z\u0027\nSystem info: host: \u0027DESKTOP-BULAH5N\u0027, ip: \u0027192.168.0.11\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_202\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.177, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\\Users\\zahir\\AppData\\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:2158}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: d46a55873f609a21b884827d661de647\n*** Element info: {Using\u003dxpath, value\u003d//input[@id\u003d\u0027currentprice_facet-$1250-$1499.99-0\u0027]}\r\n\tat sun.reflect.GeneratedConstructorAccessor18.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy18.isDisplayed(Unknown Source)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:315)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:44)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:301)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:298)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:686)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:682)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)\r\n\tat falcon.bestbuy.pageActions.BestBuySearchResultActions.applyFilters(BestBuySearchResultActions.java:31)\r\n\tat falcon.bestbuy.stepDef.BestBuySearchResultSteps.the_user_filters_by(BestBuySearchResultSteps.java:13)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)\r\n\tat java.lang.reflect.Method.invoke(Unknown Source)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:37)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:13)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:31)\r\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)\r\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)\r\n\tat cucumber.runtime.Runtime.runStep(Runtime.java:299)\r\n\tat cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)\r\n\tat cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)\r\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)\r\n\tat cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)\r\n\tat cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)\r\n\tat cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:63)\r\n\tat cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)\r\n\tat java.lang.reflect.Method.invoke(Unknown Source)\r\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)\r\n\tat org.testng.internal.Invoker.invokeMethod(Invoker.java:714)\r\n\tat org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)\r\n\tat org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)\r\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)\r\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)\r\n\tat org.testng.TestRunner.privateRun(TestRunner.java:767)\r\n\tat org.testng.TestRunner.run(TestRunner.java:617)\r\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:334)\r\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)\r\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)\r\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:240)\r\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)\r\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)\r\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)\r\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1123)\r\n\tat org.testng.TestNG.run(TestNG.java:1031)\r\n\tat org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)\r\n\tat org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)\r\n\tat org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:379)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:340)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:413)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "arguments": [
@@ -663,8 +664,7 @@ formatter.match({
   "location": "BestBuySearchResultSteps.the_product_list_should_display_only_products_in_the_category(String,String)"
 });
 formatter.result({
-  "duration": 158100,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -676,8 +676,7 @@ formatter.match({
   "location": "BestBuySearchResultSteps.the_products_should_be_within_the(String)"
 });
 formatter.result({
-  "duration": 93300,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -689,15 +688,14 @@ formatter.match({
   "location": "BestBuySearchResultSteps.the_products_should_have_a_rating_of_or_higher(String)"
 });
 formatter.result({
-  "duration": 82600,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.after({
-  "duration": 1574505600,
+  "duration": 2080254900,
   "status": "passed"
 });
 formatter.before({
-  "duration": 7681215600,
+  "duration": 1716345200,
   "status": "passed"
 });
 formatter.background({
@@ -726,7 +724,7 @@ formatter.match({
   "location": "BestBuyHomePageSteps.the_user_is_on_the_Best_Buy_homepage()"
 });
 formatter.result({
-  "duration": 178600,
+  "duration": 436000,
   "status": "passed"
 });
 formatter.scenario({
@@ -809,7 +807,7 @@ formatter.match({
   "location": "BestBuyHomePageSteps.the_user_searches_for(String)"
 });
 formatter.result({
-  "duration": 7988227700,
+  "duration": 13843865500,
   "status": "passed"
 });
 formatter.match({
@@ -834,7 +832,7 @@ formatter.match({
   "location": "BestBuySearchResultSteps.the_user_filters_by(String,String,String,String)"
 });
 formatter.result({
-  "duration": 6198276200,
+  "duration": 6405647000,
   "status": "passed"
 });
 formatter.match({
@@ -851,7 +849,7 @@ formatter.match({
   "location": "BestBuySearchResultSteps.the_product_list_should_display_only_products_in_the_category(String,String)"
 });
 formatter.result({
-  "duration": 127400,
+  "duration": 68200,
   "status": "passed"
 });
 formatter.match({
@@ -864,7 +862,7 @@ formatter.match({
   "location": "BestBuySearchResultSteps.the_products_should_be_within_the(String)"
 });
 formatter.result({
-  "duration": 82800,
+  "duration": 136800,
   "status": "passed"
 });
 formatter.match({
@@ -877,15 +875,15 @@ formatter.match({
   "location": "BestBuySearchResultSteps.the_products_should_have_a_rating_of_or_higher(String)"
 });
 formatter.result({
-  "duration": 99700,
+  "duration": 83000,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1631452600,
+  "duration": 1853836100,
   "status": "passed"
 });
 formatter.before({
-  "duration": 8903549900,
+  "duration": 1653656300,
   "status": "passed"
 });
 formatter.background({
@@ -914,7 +912,7 @@ formatter.match({
   "location": "BestBuyHomePageSteps.the_user_is_on_the_Best_Buy_homepage()"
 });
 formatter.result({
-  "duration": 358300,
+  "duration": 299900,
   "status": "passed"
 });
 formatter.scenario({
@@ -997,7 +995,7 @@ formatter.match({
   "location": "BestBuyHomePageSteps.the_user_searches_for(String)"
 });
 formatter.result({
-  "duration": 9206113500,
+  "duration": 14942474600,
   "status": "passed"
 });
 formatter.match({
@@ -1022,7 +1020,7 @@ formatter.match({
   "location": "BestBuySearchResultSteps.the_user_filters_by(String,String,String,String)"
 });
 formatter.result({
-  "duration": 6313168000,
+  "duration": 7271034800,
   "status": "passed"
 });
 formatter.match({
@@ -1039,7 +1037,7 @@ formatter.match({
   "location": "BestBuySearchResultSteps.the_product_list_should_display_only_products_in_the_category(String,String)"
 });
 formatter.result({
-  "duration": 91100,
+  "duration": 141400,
   "status": "passed"
 });
 formatter.match({
@@ -1052,7 +1050,7 @@ formatter.match({
   "location": "BestBuySearchResultSteps.the_products_should_be_within_the(String)"
 });
 formatter.result({
-  "duration": 35300,
+  "duration": 144900,
   "status": "passed"
 });
 formatter.match({
@@ -1065,11 +1063,11 @@ formatter.match({
   "location": "BestBuySearchResultSteps.the_products_should_have_a_rating_of_or_higher(String)"
 });
 formatter.result({
-  "duration": 28400,
+  "duration": 81700,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1713601200,
+  "duration": 1877199300,
   "status": "passed"
 });
 });
